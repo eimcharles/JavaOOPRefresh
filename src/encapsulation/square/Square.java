@@ -1,4 +1,4 @@
-package Encapsulation;
+package encapsulation.square;
 
 public class Square {
 

@@ -1,4 +1,4 @@
-package Encapsulation;
+package encapsulation.bank;
 
 import java.math.BigDecimal;
 

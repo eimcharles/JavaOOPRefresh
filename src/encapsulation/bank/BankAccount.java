@@ -1,4 +1,4 @@
-package Encapsulation;
+package encapsulation.bank;
 
 /**
  *       Encapsulation is the process of binding an object
