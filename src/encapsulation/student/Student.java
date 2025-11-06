@@ -1,4 +1,4 @@
-package encapsulation.overloading.student;
+package encapsulation.student;
 
 public class Student {
 
