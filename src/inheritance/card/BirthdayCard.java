@@ -16,7 +16,7 @@ import java.util.Objects;
  */
 
 
-public class BirthdayCard extends Card{
+public class BirthdayCard extends Card {
 
     private LocalDate birthday;
 

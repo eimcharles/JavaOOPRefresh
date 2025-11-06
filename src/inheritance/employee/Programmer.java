@@ -13,7 +13,7 @@ import java.util.Objects;
  *      set of attributes and methods
  * */
 
-public class Programmer extends Employee{
+public class Programmer extends Employee {
 
     private String[] programmingLanguages;
 
