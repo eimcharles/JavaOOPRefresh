@@ -1,4 +1,4 @@
-package inheritance.animal;
+package composition.animal;
 
 public class Main {
 

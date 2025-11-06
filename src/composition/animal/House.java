@@ -1,4 +1,4 @@
-package inheritance.animal;
+package composition.animal;
 
 /**
  *      Represents a house that contains an animal.
