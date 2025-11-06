@@ -23,13 +23,6 @@ public class Student {
         this.quizScores = new int[3];
     }
 
-    public Student(String name, int[] quizScores, int midtermScore, int finalScore) {
-        this.name = name;
-        this.quizScores = quizScores;
-        this.midtermScore = midtermScore;
-        this.finalScore = finalScore;
-    }
-
     public int[] getQuizScores() {
         return this.quizScores;
     }
