@@ -24,7 +24,7 @@ public class Animal {
     }
 
     public String makeNoise() {
-        return "Make noise method in parent class";
+        return "Make noise method in Animal class";
     }
 
 }

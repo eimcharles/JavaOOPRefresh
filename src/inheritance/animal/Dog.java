@@ -31,7 +31,7 @@ public class Dog extends Animal {
 
     @Override
     public String makeNoise() {
-        return "Bark method, in child class, that overrides parent makeNoise";
+        return "Bark method, in Dog class, that overrides parent makeNoise";
     }
 
     @Override
