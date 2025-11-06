@@ -202,10 +202,8 @@ public class Student {
             this.letterGrade = 'B';
         } else if (overallScore < 80 && overallScore >= 70){
             this.letterGrade = 'C';
-
         } else if (overallScore < 70 && overallScore >= 60){
             this.letterGrade = 'D';
-
         } else {
             this.letterGrade = 'F';
         }
