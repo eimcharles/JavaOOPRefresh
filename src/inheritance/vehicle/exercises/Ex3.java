@@ -26,7 +26,7 @@ public class Ex3 {
 
         Bus bus1 = new Bus();
 
-        // Using the subClass overridden method
+        // Using the subClass overloaded method to set the number of doors
         bus1.setNumberOfDoors();;
         System.out.println(bus1);
     }
