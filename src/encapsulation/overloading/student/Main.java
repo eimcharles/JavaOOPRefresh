@@ -9,8 +9,8 @@ public class Main {
         Student student;
         int[] scores;
         int[] updatedScore;
-        int midtermScore;
-        int finalScore;
+        double midtermScore;
+        double finalScore;
         double overallScore;
         char letterGrade;
         int quizNumberGrade;

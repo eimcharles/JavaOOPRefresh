@@ -4,8 +4,8 @@ public class Student {
 
     private String name;
     private final int[] quizScores;
-    private int midtermScore;
-    private int finalScore;
+    private double midtermScore;
+    private double finalScore;
     private double overallScore;
     private char letterGrade;
 
@@ -118,7 +118,7 @@ public class Student {
         this.quizScores[quizNumber] = quizMark;
     }
 
-    public int getMidtermScore() {
+    public double getMidtermScore() {
         return midtermScore;
     }
 
@@ -127,7 +127,7 @@ public class Student {
      *	      and checks to see if the value is between 0 and 50.
      * */
 
-    public void setMidtermScore(int midtermScore) {
+    public void setMidtermScore(double midtermScore) {
         if (midtermScore < 0 || midtermScore > 50){
             System.out.println("Error invalid entry for midterm score");
             return;
@@ -136,7 +136,7 @@ public class Student {
         this.midtermScore = midtermScore;
     }
 
-    public int getFinalScore() {
+    public double getFinalScore() {
         return finalScore;
     }
 
@@ -145,7 +145,7 @@ public class Student {
      *	    and checks to see if the value is between 0 and 100.
      * */
 
-    public void setFinalScore(int finalScore) {
+    public void setFinalScore(double finalScore) {
         if (finalScore < 0 || finalScore > 100) {
             System.out.println("Error invalid entry for final score");
             return;
