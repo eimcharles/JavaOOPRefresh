@@ -1,4 +1,4 @@
-package composition.animal;
+package composition;
 
 /**
  *      Represents a house that contains an animal.

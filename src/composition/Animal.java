@@ -1,4 +1,4 @@
-package composition.animal;
+package composition;
 
 import java.util.Objects;
 

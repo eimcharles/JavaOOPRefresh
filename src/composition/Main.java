@@ -1,4 +1,4 @@
-package composition.animal;
+package composition;
 
 public class Main {
 
