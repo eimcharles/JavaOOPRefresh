@@ -3,11 +3,11 @@ package abstraction.travel.base;
 abstract public class Travel {
 
     protected int distance;
-    protected double basePrice;
+    protected final double BASE_PRICE;
 
-    public Travel(int distance, double basePrice) {
+    public Travel(int distance, double BASE_PRICE) {
         this.distance = distance;
-        this.basePrice = basePrice;
+        this.BASE_PRICE = BASE_PRICE;
     }
 
     // Parent class defines an abstract protected method with an empty body
@@ -22,6 +22,6 @@ abstract public class Travel {
 
     @Override
     public String toString() {
-        return "Travel { distance = %d, basePrice = %.2f}".formatted(distance, basePrice);
+        return "Travel { distance = %d, basePrice = %.2f}".formatted(distance, BASE_PRICE);
     }
 }

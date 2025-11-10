@@ -14,16 +14,16 @@ package composition;
 
 public class House {
 
-    private final String address;
+    private final String ADDRESS;
     private Animal animal;
 
 
-    public House(String address) {
-        this.address = address;
+    public House(String ADDRESS) {
+        this.ADDRESS = ADDRESS;
     }
 
-    public House(String address, Animal animal) {
-        this.address = address;
+    public House(String ADDRESS, Animal animal) {
+        this.ADDRESS = ADDRESS;
         this.animal = animal;
     }
 
@@ -33,6 +33,6 @@ public class House {
 
     @Override
     public String toString() {
-        return "House { address = '%s', animal = %s}".formatted(address, animal);
+        return "House { address = '%s', animal = %s}".formatted(ADDRESS, animal);
     }
 }

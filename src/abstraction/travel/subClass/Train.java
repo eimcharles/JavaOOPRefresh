@@ -7,19 +7,19 @@ import java.util.Objects;
 public class Train extends Travel {
 
     // Constant values - immutable
-    private final int trainFare;
-    private final boolean isSeparateCabin;
+    private final int TRAIN_FARE;
+    private final boolean IS_SEPARATE_CABIN;
 
-    public Train(int distance, double basePrice, int trainFare, boolean isSeparateCabin) {
+    public Train(int distance, double basePrice, int TRAIN_FARE, boolean IS_SEPARATE_CABIN) {
         super(distance, basePrice);
-        this.trainFare = trainFare;
-        this.isSeparateCabin = isSeparateCabin;
+        this.TRAIN_FARE = TRAIN_FARE;
+        this.IS_SEPARATE_CABIN = IS_SEPARATE_CABIN;
     }
 
     // Child class implements the parent abstract method
     @Override
     public double totalPrice() {
-        return this.basePrice + trainFare * 1.3 + 1000;
+        return this.BASE_PRICE + TRAIN_FARE * 1.3 + 1000;
     }
 
     @Override
@@ -27,7 +27,7 @@ public class Train extends Travel {
     public void information() {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("\nThe distance of travel is ").append(this.distance)
-                .append("\nAnd travel is in a Separate Cabin: ").append(this.isSeparateCabin)
+                .append("\nAnd travel is in a Separate Cabin: ").append(this.IS_SEPARATE_CABIN)
                 .append("\nThe total expense is ").append(this.totalPrice());
 
         System.out.println(stringBuilder);
@@ -37,11 +37,11 @@ public class Train extends Travel {
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         Train train = (Train) o;
-        return trainFare == train.trainFare && isSeparateCabin == train.isSeparateCabin;
+        return TRAIN_FARE == train.TRAIN_FARE && IS_SEPARATE_CABIN == train.IS_SEPARATE_CABIN;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(trainFare, isSeparateCabin);
+        return Objects.hash(TRAIN_FARE, IS_SEPARATE_CABIN);
     }
 }
