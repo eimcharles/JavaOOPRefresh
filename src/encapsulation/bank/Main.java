@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
 
         // Q1 : creating a account object with an initial balance
-        BankAccount account = new BankAccount("Charles", BigDecimal.TEN, false);
+        BankAccount account = new BankAccount("Charles", BigDecimal.TEN, HasOverdraft.NO);
         System.out.println(account);
         System.out.println();
 

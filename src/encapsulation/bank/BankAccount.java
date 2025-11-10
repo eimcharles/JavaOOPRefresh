@@ -27,17 +27,16 @@ public class BankAccount {
     private String name;
     private BigDecimal balance;
 
-    private boolean hasOverdraft;
+    private HasOverdraft hasOverdraft;
 
     public BankAccount(){}
 
     public BankAccount(String name) {
         this.name = name;
         this.balance = BigDecimal.ZERO;
-        this.hasOverdraft = false;
     }
 
-    public BankAccount(String name, BigDecimal balance, boolean hasOverdraft) {
+    public BankAccount(String name, BigDecimal balance, HasOverdraft hasOverdraft) {
         this.name = name;
         this.balance = balance;
         this.hasOverdraft = hasOverdraft;
@@ -85,11 +84,11 @@ public class BankAccount {
         this.balance = balance;
     }
 
-    public boolean isHasOverdraft() {
+    public HasOverdraft getHasOverdraft() {
         return hasOverdraft;
     }
 
-    public void setHasOverdraft(boolean hasOverdraft) {
+    public void setHasOverdraft(HasOverdraft hasOverdraft) {
         this.hasOverdraft = hasOverdraft;
     }
 
