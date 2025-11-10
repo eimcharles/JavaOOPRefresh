@@ -1,6 +1,7 @@
 package inheritance.employee.subClass;
 
 import inheritance.employee.base.Employee;
+import inheritance.employee.base.Role;
 
 import java.util.Arrays;
 import java.util.Objects;
@@ -19,19 +20,19 @@ public class Programmer extends Employee {
 
     private String[] programmingLanguages;
 
-    public Programmer(String name, int age, String address, String experience, String[] programmingLanguages) {
+    public Programmer(String name, int age, String address, Role role, String[] programmingLanguages) {
 
         // Call to parent constructor
-        super(name, age, address, experience);
+        super(name, age, address, role);
 
         // Setting its own attribute
         this.programmingLanguages = programmingLanguages;
     }
 
-    public Programmer(String name, int age, String address, String experience) {
+    public Programmer(String name, int age, String address, Role role) {
 
         // Call to parent constructor - Programmer is-a Employee
-        super(name, age, address, experience);
+        super(name, age, address, role);
     }
 
     // Uses parent implementation always - regardless of being overridden

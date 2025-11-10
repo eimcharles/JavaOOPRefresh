@@ -1,5 +1,6 @@
 package inheritance.employee;
 
+import inheritance.employee.base.Role;
 import inheritance.employee.subClass.Manager;
 import inheritance.employee.subClass.Programmer;
 
@@ -8,14 +9,14 @@ public class Main {
     public static void main(String[] args) {
 
         // Inherits name, address and employee attributes from parent - doesn't initialize languages
-        Programmer charles = new Programmer("Charles", 37, "1234 Street", "Full-stack");
+        Programmer charles = new Programmer("Charles", 37, "1234 Street", Role.PROGRAMMER);
         System.out.println(charles);
         System.out.println();
 
         String[] languages = {"Java", "Go", "C++"};
 
         // Inherits name, address and employee attributes from parent - initializes languages
-        Programmer john = new Programmer("John", 25, "1234 Street", "Backend", languages);
+        Programmer john = new Programmer("John", 25, "1234 Street", Role.PROGRAMMER, languages);
 
         // With the use of super to explicitly call sayHi() in parent
         String johnsLanguagesFromParent = john.writeSomeCodeFromParent();
@@ -35,7 +36,7 @@ public class Main {
         System.out.println();
 
         // Inherits name, address and employee attributes from parent - initializes teamSize
-        Manager larry = new Manager("Larry", 25, "1234 Street", "Team Manager", 3);
+        Manager larry = new Manager("Larry", 25, "1234 Street", Role.MANAGER, 3);
 
         // With the use of super to explicitly call sayHi() in parent
         String larryReportFromParent = larry.reportFromParent();

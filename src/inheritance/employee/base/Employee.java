@@ -19,13 +19,13 @@ public class Employee {
     protected String name;
     protected int age;
     protected String address;
-    protected String experience;
+    protected Role role;
 
-    public Employee(String name, int age, String address, String experience) {
+    public Employee(String name, int age, String address, Role role) {
         this.name = name;
         this.age = age;
         this.address = address;
-        this.experience = experience;
+        this.role = role;
     }
 
     /**
@@ -76,12 +76,12 @@ public class Employee {
         this.address = address;
     }
 
-    public String getExperience() {
-        return experience;
+    public Role getRole(Role role) {
+        return Role.valueOf(role.toString().toLowerCase());
     }
 
-    public void setExperience(String experience) {
-        this.experience = experience;
+    public void setRole(Role role) {
+        this.role = role;
     }
 
     @Override
@@ -91,16 +91,16 @@ public class Employee {
         return age == employee1.age &&
                 Objects.equals(name, employee1.name) &&
                 Objects.equals(address, employee1.address) &&
-                Objects.equals(experience, employee1.experience);
+                Objects.equals(role, employee1.role);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, age, address, experience);
+        return Objects.hash(name, age, address, role);
     }
 
     @Override
     public String toString() {
-        return "Employee { name = '%s', age = %d, address = '%s', experience = '%s' }".formatted(name, age, address, experience);
+        return "Employee { name = '%s', age = %d, address = '%s', role = '%s' }".formatted(name, age, address, role);
     }
 }

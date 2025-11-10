@@ -1,6 +1,7 @@
 package inheritance.employee.subClass;
 
 import inheritance.employee.base.Employee;
+import inheritance.employee.base.Role;
 
 import java.util.Objects;
 
@@ -18,16 +19,16 @@ public class Manager extends Employee {
 
     private int teamSize;
 
-    public Manager(String name, int age, String address, String experience) {
+    public Manager(String name, int age, String address, Role role) {
 
         // Call to parent constructor - Manager is-a Employee
-        super(name, age, address, experience);
+        super(name, age, address, role);
     }
 
-    public Manager(String name, int age, String address, String experience, int teamSize) {
+    public Manager(String name, int age, String address, Role role, int teamSize) {
 
         // Call to parent constructor - Manager is-a Employee
-        super(name, age, address, experience);
+        super(name, age, address, role);
 
         // Setting its own attribute
         this.teamSize = teamSize;
