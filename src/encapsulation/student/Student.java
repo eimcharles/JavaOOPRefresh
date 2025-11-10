@@ -15,8 +15,8 @@ public class Student {
         this.quizScores = new int[3];
     }
 
-    // Creates a student that variable amount of quizzes
-    public Student(String name, int midtermScore, int finalScore) {
+    // Creates a student with student name, midtermScore, finalScore
+    public Student(String name, double midtermScore, double finalScore) {
         this.name = name;
         this.midtermScore = midtermScore;
         this.finalScore = finalScore;
@@ -27,40 +27,42 @@ public class Student {
         return this.quizScores;
     }
 
-
     /**
-     *	    getQuizScoreByQuizNumber takes an quizScores array and quizNumber
+     *	    getQuizScoreByQuizNumber takes quizNumber
      *	    returns the associated quizScore
      * */
 
-    public int getQuizScoreByQuizNumber(int[] quizScores, int quizNumber){
-        if (quizScores == null || quizNumber < 0 || quizNumber > quizScores.length){
+    public int getQuizScoreByQuizNumber(int quizNumber){
+        if (quizNumber <= 0 || quizNumber > this.quizScores.length){
             System.out.println("Invalid quiz number " + quizNumber + " doesn't exist");
-            return 0;
+            return -1;
         }
 
-        for (int i = 0; i < quizScores.length; i++) {
-            if (i == quizNumber){
-                return quizScores[quizNumber - 1];
-            }
-        }
-
-        return 0;
+        // if quiz number is 1 returns index 0 with quizMark
+        return this.quizScores[quizNumber - 1];
     }
 
     /**
-     *	    getQuizByQuizNumber takes an integer value quizNumber
-     *	    and checks to see if the quizNumber negative or outside the
-     *	    length of quizScores array, returns the result for the given quizNumber.
+     *	    getQuizByQuizScore takes an integer value quizScore
+     *	    and checks to see if the quizScore negative or outside the
+     *	    length of quizScores array, returns the associated quizNumber.
      * */
 
-    public int getQuizByQuizNumber(int quizNumber){
-        if (quizNumber < 0 || quizNumber > quizScores.length) {
-            System.out.println("Invalid quiz number " + quizNumber + " doesn't exist");
-            return 0;
+    public int getQuizByQuizScore(int quizScore){
+        if (quizScore < 0 || quizScore > 20) {
+            System.out.println("Invalid quiz score value " + quizScore);
+            return -1;
         }
 
-        return this.quizScores[quizNumber-1];
+        for (int i = 0; i < quizScores.length; i++) {
+
+            if (quizScores[i] == quizScore){
+                // Quiz numbers are index 0 + 1.
+                return i+1;
+            }
+        }
+
+        return -1;
     }
 
     /**
@@ -69,17 +71,23 @@ public class Student {
      *
      * 		If the value at a given index in the quizScores array is
      * 		outside the quiz range (less than 0 or greater than 20)
-     * 		set the value of the quiz at that index to 0.
+     * 		reset the value of the quiz at that index to 0.
      * */
 
     public void setAllQuizScores(int[] quizScores) {
 
+        // Makes sure that the passed array is the same size as the quiz array
+        if (quizScores.length != this.quizScores.length) {
+            System.out.println("Incorrect number of quiz scores.");
+            return;
+        }
+
         for (int i = 0; i < quizScores.length; i++) {
             if (quizScores[i] < 0 || quizScores[i] > 20){
-                System.out.println("Error invalid quiz score for quiz number " + (i + 1) + " with a values of " + quizScores[i]);
+                System.out.println("Invalid quiz score for quiz number " + (i + 1) + " with a values of " + quizScores[i]);
                 // reset the quiz score
                 this.quizScores[i] = 0;
-            } else {
+            }  else {
                 // set the quiz scores
                 this.quizScores[i] = quizScores[i];
             }
@@ -98,17 +106,18 @@ public class Student {
     public void setQuizzesByQuizNumber(int quizNumber, int quizMark){
 
         // If the quiz number is 0 or greater than the amount of quizzes taken
-        if (quizNumber < 0 || quizNumber > quizScores.length){
+        if (quizNumber <= 0 || quizNumber > quizScores.length){
             System.out.println("Invalid quiz number " + quizNumber + " doesn't exist");
             return;
         }
 
-        if (quizMark < 0 || quizMark > 100){
-            System.out.println("Invalid quiz mark " + quizMark);
+        if (quizMark < 0 || quizMark > 20){
+            System.out.println("Invalid score value " + quizMark);
             return;
         }
 
-        this.quizScores[quizNumber] = quizMark;
+        // if quiz number is 1 - sets index 0 with quizMark
+        this.quizScores[quizNumber - 1] = quizMark;
     }
 
     public double getMidtermScore() {
@@ -122,7 +131,7 @@ public class Student {
 
     public void setMidtermScore(double midtermScore) {
         if (midtermScore < 0 || midtermScore > 50){
-            System.out.println("Error invalid entry for midterm score");
+            System.out.println("Error invalid value for midterm score");
             return;
         }
 
@@ -140,7 +149,7 @@ public class Student {
 
     public void setFinalScore(double finalScore) {
         if (finalScore < 0 || finalScore > 100) {
-            System.out.println("Error invalid entry for final score");
+            System.out.println("Error invalid value for final score");
             return;
         }
 
@@ -156,17 +165,20 @@ public class Student {
      * 		grade for a given student
      * */
 
-    public void setOverallScore(int[] quizScores) {
+    public void setOverallScore() {
 
+        // Sum up the quiz scores first
         double quizScoreTotal = 0;
+
+        for (int i = 0; i < this.quizScores.length; i++) {
+            quizScoreTotal += quizScores[i];
+        }
+
+        // Then compute the average and weights
         double averageQuizScore = quizScoreTotal / quizScores.length;
         double quizWeight = averageQuizScore * 0.25;
         double midtermWeight = this.midtermScore * 0.25;
         double finalWeight = this.finalScore * 0.5;
-
-        for (int i = 0; i < quizScores.length; i++) {
-            quizScoreTotal += quizScores[i];
-        }
 
         this.overallScore = quizWeight + midtermWeight + finalWeight;
     }
@@ -188,14 +200,14 @@ public class Student {
      * 		letter grade for an overallScore
      * */
 
-    public void setLetterGrade(double overallScore) {
-        if (overallScore >= 90) {
+    public void setLetterGrade() {
+        if (this.overallScore >= 90) {
             this.letterGrade = 'A';
-        } else if (overallScore < 90 && overallScore >= 80){
+        } else if (this.overallScore < 90 && this.overallScore >= 80){
             this.letterGrade = 'B';
-        } else if (overallScore < 80 && overallScore >= 70){
+        } else if (this.overallScore < 80 && this.overallScore >= 70){
             this.letterGrade = 'C';
-        } else if (overallScore < 70 && overallScore >= 60){
+        } else if (this.overallScore < 70 && this.overallScore >= 60){
             this.letterGrade = 'D';
         } else {
             this.letterGrade = 'F';
