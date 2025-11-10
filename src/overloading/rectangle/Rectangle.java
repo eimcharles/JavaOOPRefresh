@@ -1,4 +1,4 @@
-package encapsulation.overloading.rectangle;
+package overloading.rectangle;
 
 public class Rectangle {
 
