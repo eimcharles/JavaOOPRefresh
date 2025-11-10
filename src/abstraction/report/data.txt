@@ -1,0 +1,11 @@
+# This file contains all kinds of data
+Charles
+Larry
+Josh
+0534443434
+HELLO@EMAIL.COM
+BAR
+foo
+0455252333
+greetings@me.com
+c.eimer@me.com
