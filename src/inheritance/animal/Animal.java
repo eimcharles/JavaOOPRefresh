@@ -18,13 +18,14 @@ public class Animal {
         return type;
     }
 
+    // parent method that is overridden in child classes
+    public String makeNoise() {
+        return "Make noise method in Animal class";
+    }
+
     @Override
     public String toString() {
         return "Animal { type = %s}".formatted(type);
-    }
-
-    public String makeNoise() {
-        return "Make noise method in Animal class";
     }
 
 }
