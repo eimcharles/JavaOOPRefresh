@@ -109,6 +109,6 @@ public class BankAccount {
 
     @Override
     public String toString() {
-        return " BankAccount { name = '%s', balance = %s, hasOverdraft = %s }".formatted(name, balance, hasOverdraft);
+        return "BankAccount { name = '%s', balance = %s, hasOverdraft = %s }".formatted(name, balance, hasOverdraft);
     }
 }
