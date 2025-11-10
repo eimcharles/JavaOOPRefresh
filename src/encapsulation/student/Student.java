@@ -43,12 +43,12 @@ public class Student {
     }
 
     /**
-     *	    getQuizByQuizScore takes an integer value quizScore
+     *	    findQuizNumberByScore takes an integer value quizScore
      *	    and checks to see if the quizScore negative or outside the
      *	    length of quizScores array, returns the associated quizNumber.
      * */
 
-    public int getQuizByQuizScore(int quizScore){
+    public int findQuizNumberByScore(int quizScore){
         if (quizScore < 0 || quizScore > 20) {
             System.out.println("Invalid quiz score value " + quizScore);
             return -1;
@@ -66,7 +66,7 @@ public class Student {
     }
 
     /**
-     * 		setAllQuizScores takes in an array of quizScores
+     * 		updateAllQuizScores takes in an array of quizScores
      * 		and checks the values at each index.
      *
      * 		If the value at a given index in the quizScores array is
@@ -74,7 +74,7 @@ public class Student {
      * 		reset the value of the quiz at that index to 0.
      * */
 
-    public void setAllQuizScores(int[] quizScores) {
+    public void updateAllQuizScores(int[] quizScores) {
 
         // Makes sure that the passed array is the same size as the quiz array
         if (quizScores.length != this.quizScores.length) {
@@ -95,7 +95,7 @@ public class Student {
     }
 
     /**
-     * 		setQuizzesByQuizNumber takes quizNumber, and a quizMark.
+     * 		setQuizScore takes quizNumber, and a quizMark.
      * 		if the quizNumber is out of bounds it will return an error message,
      * 		and doesn't set the value.
      *
@@ -103,7 +103,7 @@ public class Student {
      * 	    in the quizScores array for the passed quizNumber
      * */
 
-    public void setQuizzesByQuizNumber(int quizNumber, int quizMark){
+    public void setQuizScore(int quizNumber, int quizMark){
 
         // If the quiz number is 0 or greater than the amount of quizzes taken
         if (quizNumber <= 0 || quizNumber > quizScores.length){
@@ -161,11 +161,11 @@ public class Student {
     }
 
     /**
-     * 		setOverallScore calculates the overall
+     * 		calculateOverallScore calculates the overall
      * 		grade for a given student
      * */
 
-    public void setOverallScore() {
+    public void calculateOverallScore() {
 
         // Sum up the quiz scores first
         double quizScoreTotal = 0;
@@ -196,11 +196,11 @@ public class Student {
     }
 
     /**
-     * 		setLetterGrade calculates the overall
+     * 		calculateLetterGrade calculates the overall
      * 		letter grade for an overallScore
      * */
 
-    public void setLetterGrade() {
+    public void calculateLetterGrade() {
         if (this.overallScore >= 90) {
             this.letterGrade = 'A';
         } else if (this.overallScore < 90 && this.overallScore >= 80){

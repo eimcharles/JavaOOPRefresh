@@ -22,7 +22,6 @@ public class Main {
         int validQuizNumber;
         int invalidQuizNumber;
 
-
         student = new Student("Bob");
 
         // Invalid quiz values 22 and -1.
@@ -30,7 +29,7 @@ public class Main {
 
         // Q1 : Setting the quiz score with the scores array values
         System.out.println(Arrays.toString(invalidScores));
-        student.setAllQuizScores(invalidScores);
+        student.updateAllQuizScores(invalidScores);
         System.out.println();
 
         // Q2 : Individual quiz scores are reset to 0 for each invalid value passed
@@ -39,11 +38,11 @@ public class Main {
         System.out.println();
 
         // Q3 :  Setting the quiz score by quiz number
-        student.setQuizzesByQuizNumber(1, 105);
-        student.setQuizzesByQuizNumber(5, 80);
+        student.setQuizScore(1, 105);
+        student.setQuizScore(5, 80);
 
         // Valid value - quiz 2 updated
-        student.setQuizzesByQuizNumber(2, 15);
+        student.setQuizScore(2, 15);
 
         // Get the updated valid values for the quiz array
         updatedValidScores = student.getQuizScores();
@@ -63,8 +62,8 @@ public class Main {
         System.out.println();
 
         // Q11 : getting the quiz for a given grade
-        invalidQuizScore = student.getQuizByQuizScore(96);
-        validQuizNumber = student.getQuizByQuizScore(15);
+        invalidQuizScore = student.findQuizNumberByScore(96);
+        validQuizNumber = student.findQuizNumberByScore(15);
         System.out.println("Quiz number for quiz grade " + validQuizNumber + " is: " + validQuizScore);
         System.out.println();
 
@@ -88,13 +87,13 @@ public class Main {
         System.out.println();
 
         // Q10 : getting the overal score for quizzes, midterm and final
-        student.setOverallScore();
+        student.calculateOverallScore();
         overallScore = student.getOverallScore();
         System.out.println("Overall score for quizzes, midterm and final: " + overallScore);
         System.out.println();
 
         // Q11 : getting the letter grade for overall score
-        student.setLetterGrade();
+        student.calculateLetterGrade();
         letterGrade = student.getLetterGrade();
         System.out.println("Letter grade " + letterGrade);
         System.out.println();
