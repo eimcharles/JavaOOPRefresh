@@ -1,0 +1,27 @@
+package abstraction.travel.third;
+
+abstract public class Travel {
+
+    protected int distance;
+    protected double basePrice;
+
+    public Travel(int distance, double basePrice) {
+        this.distance = distance;
+        this.basePrice = basePrice;
+    }
+
+    // Parent class defines an abstract protected method with an empty body
+    abstract protected double totalPrice();
+    abstract protected void information();
+
+    public static void listOfTravelOptions(Travel[] travelOption){
+        for (Travel travel : travelOption) {
+            travel.information();
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "Travel { distance = %d, basePrice = %.2f}".formatted(distance, basePrice);
+    }
+}
