@@ -43,11 +43,13 @@ public class CharacterMatchCounter {
 
     public int getNumberOfMatchingCharacters(){
 
-        // for each character in the first word
+        // for each character in the first words length
         for (int i = 0; i < firstWord.length(); i++) {
 
             // Check the letter at index i in first word and check if character is present in second word
-            // return index of the position of the first occurrence of the character.
+            // returns index of the position of the first occurrence of the character.
+            // if return value is positive, character is present
+            // else negative, character is not present
             if (this.secondWord.indexOf(this.firstWord.charAt(i)) >= 0) {
 
                 // Increment the counter is letter is first work is present in second word
