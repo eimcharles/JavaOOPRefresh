@@ -1,4 +1,4 @@
-package overloading.rectangle;
+package overloading;
 
 public class Main {
 
