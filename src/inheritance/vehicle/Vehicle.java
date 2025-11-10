@@ -32,10 +32,12 @@ public class Vehicle {
         return this.price;
     }
 
+    // Final method that cannot be overridden - overloaded in child class to setNumbOfDoors
     final public void setNumbOfDoors(int numbOfDoors) {
         this.numbOfDoors = numbOfDoors;
     }
 
+    // Parent method that is overridden in the child class
     public void setPrice(BigDecimal price) {
         this.price = price;
     }

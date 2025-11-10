@@ -5,6 +5,22 @@ import java.util.Objects;
 
 public class Bus extends Vehicle {
 
+    /**
+     *         The bus class does not have direct access to
+     *         its inherited attributes given that they
+     *         are declared private in the vehicle class
+     *
+     *         Therefore, it uses method overriding to set
+     *         its own price through the parent by calling
+     *         super.setPrice() to update its own price.
+     *
+     *         Moreover, it uses method overloading to
+     *         set its own numberOfDoors given that
+     *         the setNumbOfDoors() method is final
+     *         and cannot be overloaded in the child
+     *         class.
+     * */
+
     private int passengerCapacity;
 
     // Calls vehicle default constructor upon instantiation
@@ -30,12 +46,14 @@ public class Bus extends Vehicle {
         this.passengerCapacity = passengerCapacity;
     }
 
+    // Overrides the parent class setPrice() method and sets the price through the parent given private access modifier for attributes
     @Override
     public void setPrice(BigDecimal price) {
         System.out.println("Using the overridden setPrice method to set the new price");
         super.setPrice(price);
     }
 
+    // Overloads the final method in the parent class given it cannot be overridden
     public void setNumberOfDoors(){
         System.out.println("Using the overloaded setNumberOfDoors method to set the number of doors");
         setNumbOfDoors(5);
