@@ -1,6 +1,7 @@
 package inheritance.card.subClass;
 
 import inheritance.card.base.Card;
+import inheritance.card.base.Occasion;
 
 import java.time.LocalDate;
 import java.util.Objects;
@@ -22,11 +23,11 @@ public class BirthdayCard extends Card {
 
     private LocalDate birthday;
 
-    public BirthdayCard(String occasion, String message) {
+    public BirthdayCard(Occasion occasion, String message) {
         super(occasion, message);
     }
 
-    public BirthdayCard(String occasion, String message, LocalDate birthday) {
+    public BirthdayCard(Occasion occasion, String message, LocalDate birthday) {
         super(occasion, message);
         this.birthday = birthday;
     }

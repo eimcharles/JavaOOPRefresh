@@ -4,10 +4,10 @@ import java.util.Objects;
 
 public class Card {
 
-    protected String occasion;
+    protected Occasion occasion;
     protected String message;
 
-    public Card(String occasion, String message) {
+    public Card(Occasion occasion, String message) {
         this.occasion = occasion;
         this.message = message;
     }
@@ -17,11 +17,11 @@ public class Card {
         this.message = card.message;
     }
 
-    public String getOccasion() {
+    public Occasion getOccasion() {
         return occasion;
     }
 
-    public void setOccasion(String occasion) {
+    public void setOccasion(Occasion occasion) {
         this.occasion = occasion;
     }
 
