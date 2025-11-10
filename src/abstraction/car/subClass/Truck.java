@@ -6,24 +6,24 @@ import java.util.Objects;
 
 public class Truck extends Car {
 
-    private int numberOftires;
+    private int numberOfTires;
 
     // Belongs to Truck class
     private int price;
 
-    public Truck(int numberOftires) {
+    public Truck(int numberOfTires) {
         super();
-        this.numberOftires = numberOftires;
+        this.numberOfTires = numberOfTires;
         price = Car.price + 30_000;
 
     }
 
-    public int getNumberOftires() {
-        return numberOftires;
+    public int getNumberOfTires() {
+        return numberOfTires;
     }
 
-    public void setNumberOftires(int numberOftires) {
-        this.numberOftires = numberOftires;
+    public void setNumberOfTires(int numberOfTires) {
+        this.numberOfTires = numberOfTires;
     }
 
     /**
@@ -50,12 +50,12 @@ public class Truck extends Car {
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         Truck truck = (Truck) o;
-        return numberOftires == truck.numberOftires && price == truck.price;
+        return numberOfTires == truck.numberOfTires && price == truck.price;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(numberOftires, price);
+        return Objects.hash(numberOfTires, price);
     }
 
     /**
@@ -68,7 +68,7 @@ public class Truck extends Car {
 
     @Override
     public String toString() {
-        return "Truck{ numberOftires = %d, numberOfDoors = %d}".formatted(numberOftires, numberOfDoors);
+        return "Truck{ numberOftires = %d, numberOfDoors = %d}".formatted(numberOfTires, numberOfDoors);
     }
 
 }
