@@ -1,5 +1,10 @@
 package inheritance.animal;
 
+import inheritance.animal.base.Animal;
+import inheritance.animal.base.AnimalType;
+import inheritance.animal.subClass.Dog;
+import inheritance.animal.subClass.GoldenRetriever;
+
 public class Main {
 
     /**

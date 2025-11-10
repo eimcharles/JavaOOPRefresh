@@ -1,4 +1,6 @@
-package inheritance.employee;
+package inheritance.employee.subClass;
+
+import inheritance.employee.base.Employee;
 
 import java.util.Objects;
 

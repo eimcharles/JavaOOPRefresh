@@ -1,6 +1,6 @@
 package inheritance.vehicle.exercises;
 
-import inheritance.vehicle.Bus;
+import inheritance.vehicle.subClass.Bus;
 
 public class Ex3 {
 

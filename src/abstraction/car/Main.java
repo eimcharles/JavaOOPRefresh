@@ -1,10 +1,10 @@
 package abstraction.car;
 
-import abstraction.car.first.Car;
-import abstraction.car.second.RaceCar;
-import abstraction.car.second.Truck;
+import abstraction.car.base.Car;
+import abstraction.car.subClass.RaceCar;
+import abstraction.car.subClass.Truck;
 
-import static abstraction.car.first.Car.*;
+import static abstraction.car.base.Car.*;
 
 public class Main {
 

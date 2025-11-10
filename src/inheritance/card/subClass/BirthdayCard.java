@@ -1,4 +1,6 @@
-package inheritance.card;
+package inheritance.card.subClass;
+
+import inheritance.card.base.Card;
 
 import java.time.LocalDate;
 import java.util.Objects;

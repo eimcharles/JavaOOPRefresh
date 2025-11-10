@@ -1,4 +1,4 @@
-package abstraction.travel.third;
+package abstraction.travel.base;
 
 abstract public class Travel {
 

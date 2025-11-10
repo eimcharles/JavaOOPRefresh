@@ -1,5 +1,8 @@
 package inheritance.employee;
 
+import inheritance.employee.subClass.Manager;
+import inheritance.employee.subClass.Programmer;
+
 public class Main {
 
     public static void main(String[] args) {

@@ -1,4 +1,6 @@
-package inheritance.vehicle;
+package inheritance.vehicle.subClass;
+
+import inheritance.vehicle.base.Vehicle;
 
 import java.math.BigDecimal;
 import java.util.Objects;

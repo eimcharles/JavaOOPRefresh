@@ -1,4 +1,4 @@
-package inheritance.employee;
+package inheritance.employee.base;
 
 import java.util.Objects;
 

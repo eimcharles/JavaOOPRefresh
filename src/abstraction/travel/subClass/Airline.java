@@ -1,6 +1,6 @@
-package abstraction.travel.first;
+package abstraction.travel.subClass;
 
-import abstraction.travel.third.Travel;
+import abstraction.travel.base.Travel;
 
 import java.util.Objects;
 

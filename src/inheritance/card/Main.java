@@ -1,5 +1,8 @@
 package inheritance.card;
 
+import inheritance.card.base.Card;
+import inheritance.card.subClass.BirthdayCard;
+
 import java.time.LocalDate;
 
 public class Main {

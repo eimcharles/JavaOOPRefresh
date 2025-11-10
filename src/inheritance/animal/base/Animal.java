@@ -1,4 +1,4 @@
-package inheritance.animal;
+package inheritance.animal.base;
 
 public class Animal {
 

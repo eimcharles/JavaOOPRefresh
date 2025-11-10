@@ -1,9 +1,7 @@
 package inheritance.vehicle.exercises;
 
-import inheritance.vehicle.Bus;
-import inheritance.vehicle.Vehicle;
-
-import java.math.BigDecimal;
+import inheritance.vehicle.subClass.Bus;
+import inheritance.vehicle.base.Vehicle;
 
 public class Ex1 {
 

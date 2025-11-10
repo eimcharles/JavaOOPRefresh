@@ -1,4 +1,6 @@
-package inheritance.animal;
+package inheritance.animal.subClass;
+
+import inheritance.animal.base.AnimalType;
 
 public class GoldenRetriever extends Dog {
 

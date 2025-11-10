@@ -1,4 +1,7 @@
-package inheritance.animal;
+package inheritance.animal.subClass;
+
+import inheritance.animal.base.Animal;
+import inheritance.animal.base.AnimalType;
 
 import java.util.Objects;
 

@@ -1,10 +1,10 @@
 package abstraction.travel;
 
-import abstraction.travel.first.Airline;
-import abstraction.travel.second.Train;
-import abstraction.travel.third.Travel;
+import abstraction.travel.subClass.Airline;
+import abstraction.travel.subClass.Train;
+import abstraction.travel.base.Travel;
 
-import static abstraction.travel.third.Travel.listOfTravelOptions;
+import static abstraction.travel.base.Travel.listOfTravelOptions;
 
 public class Main {
 

@@ -1,4 +1,4 @@
-package inheritance.card;
+package inheritance.card.base;
 
 import java.util.Objects;
 
