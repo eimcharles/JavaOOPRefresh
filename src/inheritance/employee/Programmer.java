@@ -32,11 +32,12 @@ public class Programmer extends Employee {
         super(name, age, address, experience);
     }
 
+    // Uses parent implementation always - regardless of being overridden
     public String writeSomeCodeFromParent(){
 
         StringBuilder stringBuilder = new StringBuilder();
 
-        // Call to parent method defined in parent class
+        // Strict call to parent method defined in parent class
         stringBuilder.append(super.sayHi()).append(", I can code in ");
 
         for (String programmingLanguage : this.getProgrammingLanguages()) {
@@ -46,11 +47,12 @@ public class Programmer extends Employee {
         return stringBuilder.toString();
     }
 
+    // Uses child implementation always - only if overridden
     public String writeSomeCodeFromChild(){
 
         StringBuilder stringBuilder = new StringBuilder();
 
-        // Call to overridden method defined in parent class
+        // Call to overridden method defined in parent class - access to name attribute
         stringBuilder.append(sayHi()).append(this.name).append(", I can code in ");
 
         for (String programmingLanguage : this.getProgrammingLanguages()) {

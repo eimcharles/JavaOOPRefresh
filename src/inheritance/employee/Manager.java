@@ -31,15 +31,17 @@ public class Manager extends Employee {
         this.teamSize = teamSize;
     }
 
+    // Uses parent implementation always - regardless of being overridden
     public String reportFromParent(){
 
-        // Call to parent method defined in parent class
+        // Strict call to parent method defined in parent class
         return super.sayHi() + ", i'm a manager and i'm writing team reports.";
     }
 
+    // Uses child implementation always - only if overridden
     public String reportFromChild(){
 
-        // Call to overridden method defined in parent class
+        // Call to overridden method defined in parent class - access to name attribute
         return sayHi() + this.name + ", i'm a manager and i'm writing team reports.";
     }
 

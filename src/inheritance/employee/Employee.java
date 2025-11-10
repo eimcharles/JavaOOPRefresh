@@ -28,6 +28,26 @@ public class Employee {
         this.experience = experience;
     }
 
+    /**
+     *      The Child classes calling sayHi() works
+     *      because the method is protected and visible to subclasses.
+     *
+     *      - The subclass can call the method directly given it is protected
+     *      and doesn't have to go through the parent
+     *
+     *      - if the method was private, the sayHi() method call in
+     *      subclasses would not compile (allows for method invocation in child)
+     *
+     *      - sayHi() is accessible within the same package
+     *
+     *      The compiler allows this call, but the JVM decides at runtime which
+     *      version of the method to actually execute.
+     *
+     *      sayHi() → “Ask the object itself which version to run”
+     *      super.sayHi() → “Ignore the object, run my parent’s version”
+     *
+     * */
+
     protected String sayHi(){
         return "Hello from my super class, my name is " + this.getName();
     }
