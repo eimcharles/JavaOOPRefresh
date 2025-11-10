@@ -1,4 +1,4 @@
-package abstraction.vehicle.first;
+package abstraction.car.first;
 
 /**
  *       Abstract classes should be used when you want to define a common

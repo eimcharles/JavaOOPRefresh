@@ -1,6 +1,6 @@
-package abstraction.vehicle.second;
+package abstraction.car.second;
 
-import abstraction.vehicle.first.Car;
+import abstraction.car.first.Car;
 
 import java.util.Objects;
 

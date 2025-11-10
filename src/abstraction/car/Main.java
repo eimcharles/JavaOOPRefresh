@@ -1,10 +1,10 @@
-package abstraction.vehicle;
+package abstraction.car;
 
-import abstraction.vehicle.first.Car;
-import abstraction.vehicle.second.RaceCar;
-import abstraction.vehicle.second.Truck;
+import abstraction.car.first.Car;
+import abstraction.car.second.RaceCar;
+import abstraction.car.second.Truck;
 
-import static abstraction.vehicle.first.Car.*;
+import static abstraction.car.first.Car.*;
 
 public class Main {
 
