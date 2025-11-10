@@ -49,8 +49,8 @@ abstract public class Car {
      *
      * */
 
-    abstract protected void setNumberOfDoors(int numberOfDoors);
-    abstract protected int getPrice();
+    protected abstract void setNumberOfDoors(int numberOfDoors);
+    protected abstract int getPrice();
 
     /**
      *      Abstract classes can contain

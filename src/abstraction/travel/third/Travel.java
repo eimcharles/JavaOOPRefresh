@@ -11,8 +11,8 @@ abstract public class Travel {
     }
 
     // Parent class defines an abstract protected method with an empty body
-    abstract protected double totalPrice();
-    abstract protected void information();
+    protected abstract double totalPrice();
+    protected abstract void information();
 
     public static void listOfTravelOptions(Travel[] travelOption){
         for (Travel travel : travelOption) {
