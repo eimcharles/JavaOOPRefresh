@@ -1,13 +1,13 @@
 package composition;
 
 /**
- *      Represents a house that contains an animal.
+ *      Represents a House object that contains an Animal object.
  *
  *      This class demonstrates composition: a House "has-an" Animal.
  *      The Animal is a part of the House.
  *
  *      The House does not control the creation or destruction of the Animal,
- *      the Animal object is associated to the House class.
+ *      the Animal object is associated to the House object.
  *
  *      A House may or may not have an associated Animal.
  */
