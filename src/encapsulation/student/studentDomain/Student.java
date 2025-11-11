@@ -8,7 +8,6 @@ public class Student {
     private final int[] quizScores;
     private double midtermScore;
     private double finalScore;
-    private double overallScore;
     private LetterGrade letterGrade;
 
     // Creates a student that has 3 quizzes
@@ -47,10 +46,6 @@ public class Student {
 
     public void setFinalScore(double finalScore) {
         this.finalScore = finalScore;
-    }
-
-    public double getOverallScore() {
-        return overallScore;
     }
 
     public void setName(String name) {

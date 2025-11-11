@@ -100,7 +100,7 @@ public class StudentService {
     }
 
     /**
-     *	    findQuizNumberByStudent takes Student object and a double quizScore,
+     *	    findQuizNumberByStudent takes Student object and quizScore,
      *	    checks to see if the quizScore negative or outside the
      *	    length of quizScores array, returns the associated quizNumber.
      * */

@@ -7,4 +7,5 @@ public enum LetterGrade {
     C,
     D,
     F
+
 }

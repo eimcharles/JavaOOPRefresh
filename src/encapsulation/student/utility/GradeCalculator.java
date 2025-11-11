@@ -32,12 +32,12 @@ public class GradeCalculator {
 
     /**
      *      calculates the letter grade
-     *      given a Student object and an overall score
+     *      given a Student object
      */
 
     public void updateLetterGrade(Student student) {
 
-        double overallScore = student.getOverallScore();
+        double overallScore = student.getFinalScore();
 
         if (overallScore >= 90) {
             student.setLetterGrade(LetterGrade.A);
