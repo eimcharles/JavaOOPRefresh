@@ -34,7 +34,7 @@ public class Main {
 
         // Q1: creating an goldenRetriever object that does not override the parent makeNoise
         // Not overridden by goldenRetriever, calls the parent Dog class makeNoise
-        goldenRetriever = new GoldenRetriever(AnimalType.DOG, "Lassy", 8);
+        goldenRetriever = new GoldenRetriever(AnimalType.DOG, "Lassy", 8, "Golden");
         System.out.println(goldenRetriever);
         System.out.println(goldenRetriever.makeNoise());
 
