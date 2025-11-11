@@ -8,8 +8,7 @@ import java.util.Objects;
 
 /**
  *      Programmer is a subclass,
- *      the child class that inherits
- *      from the employee class.
+ *      it inherits from the employee class.
  *
  *      It inherits all the methods from the
  *      parent class and defines its own new
@@ -30,17 +29,13 @@ public class Programmer extends Employee {
     }
 
     public Programmer(String name, int age, String address, Role role) {
-
-        // Call to parent constructor - Programmer is-a Employee
         super(name, age, address, role);
     }
 
-    // Uses parent implementation always - regardless of being overridden
+    // Call to parent method by super.sayHi();
     public String writeSomeCodeFromParent(){
 
         StringBuilder stringBuilder = new StringBuilder();
-
-        // Strict call to parent method defined in parent class
         stringBuilder.append(super.sayHi()).append(", I can code in ");
 
         for (String programmingLanguage : this.getProgrammingLanguages()) {
@@ -50,12 +45,12 @@ public class Programmer extends Employee {
         return stringBuilder.toString();
     }
 
-    // Uses child implementation always - only if overridden
+    // Call to overridden child method sayHi()
     public String writeSomeCodeFromChild(){
 
         StringBuilder stringBuilder = new StringBuilder();
 
-        // Call to overridden method defined in parent class - access to name attribute
+        // We can do this given the method is protected - no need to super.sayHi()
         stringBuilder.append(sayHi()).append(this.name).append(", I can code in ");
 
         for (String programmingLanguage : this.getProgrammingLanguages()) {

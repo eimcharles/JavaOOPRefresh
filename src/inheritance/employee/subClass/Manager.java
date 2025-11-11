@@ -7,12 +7,11 @@ import java.util.Objects;
 
 /**
  *      Manager is a subclass,
- *      the child class that inherits
- *      from the employee class.
+ *      it inherits from the employee class.
  *
  *      It inherits all the methods from the
  *      parent class and defines its own new
- *      set of attributes and methods
+ *      set of attributes and methods.
  * */
 
 public class Manager extends Employee {
@@ -29,22 +28,17 @@ public class Manager extends Employee {
     }
 
     public Manager(String name, int age, String address, Role role) {
-
-        // Call to parent constructor - Manager is-a Employee
         super(name, age, address, role);
     }
 
-    // Uses parent implementation always - regardless of being overridden
+    // Call to parent method by super.sayHi();
     public String reportFromParent(){
-
-        // Strict call to parent method defined in parent class
         return super.sayHi() + ", i'm a manager and i'm writing team reports.";
     }
 
-    // Uses child implementation always - only if overridden
+    // Call to overridden child method sayHi()
     public String reportFromChild(){
-
-        // Call to overridden method defined in parent class - access to name attribute
+        // We can do this given the method is protected - no need to super.sayHi()
         return sayHi() + this.name + ", i'm a manager and i'm writing team reports.";
     }
 

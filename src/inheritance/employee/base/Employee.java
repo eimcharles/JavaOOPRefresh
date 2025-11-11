@@ -3,15 +3,14 @@ package inheritance.employee.base;
 import java.util.Objects;
 
 /**
- *      Employee is a super class,
+ *      Employee is a superclass,
  *      the parent class for both
  *      programmer and manager
  *      child classes.
  *
- *      The protected access modifier
- *      allows for the class itself and
- *      the subclass to have direct
- *      access to the parent attribute
+ *      The protected access modifiers
+ *      allow for subclasses to have direct
+ *      access to their inherited attributes.
  * */
 
 public class Employee {
@@ -29,23 +28,18 @@ public class Employee {
     }
 
     /**
-     *      The Child classes calling sayHi() works
-     *      because the method is protected and visible to subclasses.
-     *
-     *      - The subclass can call the method directly given it is protected
-     *      and doesn't have to go through the parent
+     *      The child classes can call the sayHi() directly
+     *      given the method has a protected access modifier
+     *      and is accessible within the package and to subclasses.
      *
      *      - if the method was private, the sayHi() method call in
      *      subclasses would not compile (allows for method invocation in child)
      *
-     *      - sayHi() is accessible within the same package
-     *
-     *      The compiler allows this call, but the JVM decides at runtime which
-     *      version of the method to actually execute.
+     *      The JVM decides at runtime which version of the method to actually execute.
      *
      *      sayHi() → “Ask the object itself which version to run”
-     *      super.sayHi() → “Ignore the object, run my parent’s version”
      *
+     *      super.sayHi() → “Ignore the object, run my parent’s version”
      * */
 
     protected String sayHi(){
