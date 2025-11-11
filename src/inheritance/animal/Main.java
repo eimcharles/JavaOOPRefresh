@@ -19,21 +19,20 @@ public class Main {
         Dog dog;
         GoldenRetriever goldenRetriever;
 
-        // Q1: creating an Animal object and calling the parent makeNoise method
+        // Creating an Animal object and calling the parent makeNoise() method
         animal = new Animal();
         animal.setType(AnimalType.DOG);
         System.out.println(animal);
         System.out.println(animal.makeNoise());
         System.out.println();
 
-        // Q2: creating an Dog object and calling the child makeNoise method
+        // Creating a Dog object and calling the child makeNoise() method
         dog = new Dog(AnimalType.DOG, "Finn", 5);
         System.out.println(dog);
         System.out.println(dog.makeNoise());
         System.out.println();
 
-        // Q1: creating an goldenRetriever object that does not override the parent makeNoise
-        // Not overridden by goldenRetriever, calls the parent Dog class makeNoise
+        // Creating an goldenRetriever object that does not override the parent makeNoise() method - calls the parent Dog class makeNoise() method
         goldenRetriever = new GoldenRetriever(AnimalType.DOG, "Lassy", 8, "Golden");
         System.out.println(goldenRetriever);
         System.out.println(goldenRetriever.makeNoise());
