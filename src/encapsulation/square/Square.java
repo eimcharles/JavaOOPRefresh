@@ -5,9 +5,8 @@ public class Square {
     int length;
 
     /**
-     *      We are bundling the object's state and
-     *      behaviour into one single unit the withdrawMoney()
-     *      method.
+     *      Encapsulation: bundling the object's state and
+     *      behaviour into one single unit the area().
      * */
 
     int area (){
