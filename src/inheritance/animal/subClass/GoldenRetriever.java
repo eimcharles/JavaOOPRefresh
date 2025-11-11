@@ -6,8 +6,9 @@ public class GoldenRetriever extends Dog {
 
     private String colour;
 
-    public GoldenRetriever(AnimalType type, String dogName, int dogAge) {
+    public GoldenRetriever(AnimalType type, String dogName, int dogAge, String colour) {
         super(type, dogName, dogAge);
+        this.colour = colour;
     }
 
     public void setColour(String colour) {
