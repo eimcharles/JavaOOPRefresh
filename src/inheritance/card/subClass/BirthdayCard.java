@@ -28,7 +28,7 @@ public class BirthdayCard extends Card {
     }
 
     public BirthdayCard(Occasion occasion, String message, LocalDate birthday) {
-        super(occasion, message);
+        this(occasion, message);
         this.birthday = birthday;
     }
 
