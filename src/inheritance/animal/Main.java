@@ -7,12 +7,6 @@ import inheritance.animal.subClass.GoldenRetriever;
 
 public class Main {
 
-    /**
-     *      The Parent object
-     *      cannot call the child method that
-     *      overrides its own method, it cannot see it.
-     * */
-
     public static void main(String[] args) {
 
         Animal animal;
