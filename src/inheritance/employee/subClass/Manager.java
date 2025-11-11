@@ -19,19 +19,19 @@ public class Manager extends Employee {
 
     private int teamSize;
 
+    public Manager(String name, int age, String address, Role role, int teamSize) {
+
+        // Call to parent constructor - Manager is-a Employee
+        this(name, age, address, role);
+
+        // Setting its own attribute
+        this.teamSize = teamSize;
+    }
+
     public Manager(String name, int age, String address, Role role) {
 
         // Call to parent constructor - Manager is-a Employee
         super(name, age, address, role);
-    }
-
-    public Manager(String name, int age, String address, Role role, int teamSize) {
-
-        // Call to parent constructor - Manager is-a Employee
-        super(name, age, address, role);
-
-        // Setting its own attribute
-        this.teamSize = teamSize;
     }
 
     // Uses parent implementation always - regardless of being overridden

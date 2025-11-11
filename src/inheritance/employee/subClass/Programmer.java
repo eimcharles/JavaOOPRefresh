@@ -23,7 +23,7 @@ public class Programmer extends Employee {
     public Programmer(String name, int age, String address, Role role, String[] programmingLanguages) {
 
         // Call to parent constructor
-        super(name, age, address, role);
+        this(name, age, address, role);
 
         // Setting its own attribute
         this.programmingLanguages = programmingLanguages;
