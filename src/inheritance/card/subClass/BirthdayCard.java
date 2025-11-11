@@ -7,15 +7,15 @@ import java.time.LocalDate;
 import java.util.Objects;
 
 /**
- *      Represents a birthdayCard that contains an LocalDate.
+ *      Represents a birthdayCard subclass that extends the Card
+ *      class and contains a LocalDate birthday object.
  *
- *      This class demonstrates composition: a birthdayCard "has-an" LocalDate.
- *      The LocalDate is a part of the birthdayCard.
+ *      This class birthdayCard "has-an" LocalDate.
  *
  *      The birthdayCard does not control the creation or destruction of the LocalDate,
  *      the LocalDate object is associated to the birthdayCard class.
  *
- *      A birthdayCard may or may not have an associated Animal.
+ *      A birthdayCard may or may not have an associated LocalDate birthday.
  */
 
 
