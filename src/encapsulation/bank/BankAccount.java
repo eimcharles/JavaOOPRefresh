@@ -44,8 +44,7 @@ public class BankAccount {
 
     /**
      *      We are bundling the object's state and
-     *      behaviour into one single unit: withdrawMoney()
-     *      method.
+     *      behaviour into one single unit: withdrawMoney(BigDecimal amount)
      *
      *      Clients have access this method through the public interface.
      * */
@@ -58,11 +57,11 @@ public class BankAccount {
             // Subtracts the amount from balance (since there's enough money)
             this.balance = this.balance.subtract(amount);
 
-            // Returns the withdrawn amount
+            // Returns the amount withdrawn
             return amount;
         }
 
-        // Not enough money to withdraw passes amount
+        // Not enough money to withdraw - returns 0
         return BigDecimal.ZERO;
 
     }
@@ -79,7 +78,6 @@ public class BankAccount {
         return balance;
     }
 
-    // Set limit to balance, if needed - full control.
     public void setBalance(BigDecimal balance) {
         this.balance = balance;
     }

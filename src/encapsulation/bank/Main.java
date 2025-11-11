@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // Q1 : creating a account object with an initial balance
+        // Q1 : creating an account object with an initial balance
         BankAccount account = new BankAccount("Charles", BigDecimal.TEN, HasOverdraft.NO);
         System.out.println(account);
         System.out.println();
@@ -21,14 +21,13 @@ public class Main {
         System.out.println("Account balance: " + account.getBalance());
         System.out.println();
 
-        // Q4: attempting to wtihdraw 100$ with account balance being 0$
+        // Q4: attempting to withdraw 100$ with account balance being 0$
         System.out.println(account);
         System.out.println(account.withdrawMoney(new BigDecimal("100.0")));
         System.out.println("Account balance: " + account.getBalance());
         System.out.println();
 
         // The state variables are encapsulated within the object (they are hidden - no direct access)
-        // Adding 100$ to the bank account through encapsulated setter setBalance
         account.setBalance(new BigDecimal("100"));
         System.out.println("Account balance: " + account.getBalance());
         System.out.println(account);
