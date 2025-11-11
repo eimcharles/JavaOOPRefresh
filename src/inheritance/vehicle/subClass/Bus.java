@@ -10,15 +10,15 @@ public class Bus extends Vehicle {
     /**
      *         The bus class does not have direct access to
      *         its inherited attributes given that they
-     *         are declared private in the vehicle class
+     *         are declared private in the vehicle class.
      *
      *         Therefore, it uses method overriding to set
      *         its own price through the parent by calling
-     *         super.setPrice() to update its own price.
+     *         super.setPrice().
      *
      *         Moreover, it uses method overloading to
      *         set its own numberOfDoors given that
-     *         the setNumbOfDoors() method is final
+     *         the setNumbOfDoors() is final
      *         and cannot be overloaded in the child
      *         class.
      * */
@@ -48,17 +48,17 @@ public class Bus extends Vehicle {
         this.passengerCapacity = passengerCapacity;
     }
 
-    // Overrides the parent class setPrice() method and sets the price through the parent given private access modifier for attributes
+    // Overrides the parent class setPrice() method and sets the price through the parent
     @Override
     public void setPrice(BigDecimal price) {
         System.out.println("Using the overridden setPrice method to set the new price");
         super.setPrice(price);
     }
 
-    // Overloads the final method in the parent class given it cannot be overridden
+    // Overloads the final method in the parent class
     public void setNumberOfDoors(){
         System.out.println("Using the overloaded setNumberOfDoors method to set the number of doors");
-        setNumbOfDoors(5);
+        setNumberOfDoors(5);
     }
 
     @Override
@@ -76,6 +76,6 @@ public class Bus extends Vehicle {
 
     // Call to parent methods to display all attributes
     public String toString() {
-        return "Bus has %d doors and its price is: %s$ with passenger capacity of %d passengers.".formatted(getNumbOfDoors(), getPrice(), this.passengerCapacity);
+        return "Bus has %d doors and its price is: %s$ with passenger capacity of %d passengers.".formatted(getNumberOfDoors(), getPrice(), this.passengerCapacity);
     }
 }
