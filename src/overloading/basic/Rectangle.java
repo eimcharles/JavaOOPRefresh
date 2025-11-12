@@ -1,4 +1,4 @@
-package overloading;
+package overloading.basic;
 
 public class Rectangle {
 
