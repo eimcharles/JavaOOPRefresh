@@ -1,4 +1,4 @@
-package composition;
+package composition.example1;
 
 /**
  *      Represents a House object that contains an Animal object.

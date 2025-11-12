@@ -1,4 +1,4 @@
-package composition;
+package composition.example1;
 
 public class Main {
 

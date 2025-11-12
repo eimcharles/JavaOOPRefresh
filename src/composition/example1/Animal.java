@@ -1,4 +1,4 @@
-package composition;
+package composition.example1;
 
 import java.util.Objects;
 
