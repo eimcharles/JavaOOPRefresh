@@ -1,6 +1,9 @@
-package polymorphism.abstractWithInterfaces;
+package polymorphism.abstractWithInterfaces.subClass;
 
-class Circle extends Shape implements Drawable {
+import polymorphism.abstractWithInterfaces.drawableInterface.Drawable;
+import polymorphism.abstractWithInterfaces.base.Shape;
+
+public class Circle extends Shape implements Drawable {
 
     private double radius;
 

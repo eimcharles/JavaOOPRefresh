@@ -1,4 +1,6 @@
-package polymorphism.abstractWithInterfaces;
+package polymorphism.abstractWithInterfaces.base;
+
+import polymorphism.abstractWithInterfaces.drawableInterface.Drawable;
 
 abstract public class Shape implements Drawable {
 

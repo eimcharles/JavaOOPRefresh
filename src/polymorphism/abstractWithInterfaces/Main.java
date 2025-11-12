@@ -1,5 +1,9 @@
 package polymorphism.abstractWithInterfaces;
 
+import polymorphism.abstractWithInterfaces.base.Shape;
+import polymorphism.abstractWithInterfaces.drawableInterface.Drawable;
+import polymorphism.abstractWithInterfaces.subClass.Circle;
+
 public class Main {
 
     /**

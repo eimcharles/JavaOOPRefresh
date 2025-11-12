@@ -1,21 +1,22 @@
-package polymorphism.interfaces;
+package polymorphism.interfaces.implementation;
+
+import polymorphism.interfaces.VehicleInterface.Vehicle;
 
 import java.io.Serializable;
 
-public class Bicycle implements Vehicle , Serializable {
+public class Car implements Vehicle, Serializable {
 
     private int currentSpeed;
 
-    public Bicycle() {}
+    public Car(){}
 
-    public Bicycle(int currentSpeed) {
+    public Car(int currentSpeed) {
         this.currentSpeed = currentSpeed;
     }
 
     @Override
     public void move(int amount) {
         this.currentSpeed += amount;
-
     }
 
     @Override
@@ -30,6 +31,6 @@ public class Bicycle implements Vehicle , Serializable {
 
     @Override
     public String toString() {
-        return "Bicycle { currentSpeed = %d}".formatted(currentSpeed);
+        return "Car { currentSpeed = %d }".formatted(currentSpeed);
     }
 }

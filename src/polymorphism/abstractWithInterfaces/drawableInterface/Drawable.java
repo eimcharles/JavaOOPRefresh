@@ -1,4 +1,4 @@
-package polymorphism.abstractWithInterfaces;
+package polymorphism.abstractWithInterfaces.drawableInterface;
 
 public interface Drawable {
 

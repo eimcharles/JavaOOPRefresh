@@ -1,4 +1,6 @@
-package polymorphism.interfaces;
+package polymorphism.interfaces.person;
+
+import polymorphism.interfaces.VehicleInterface.Vehicle;
 
 import java.util.Arrays;
 import java.util.Objects;

@@ -1,5 +1,11 @@
 package polymorphism.interfaces;
 
+import polymorphism.interfaces.implementation.Bicycle;
+import polymorphism.interfaces.implementation.Car;
+import polymorphism.interfaces.implementation.ElectricScooter;
+import polymorphism.interfaces.person.Person;
+import polymorphism.interfaces.VehicleInterface.Vehicle;
+
 public class Main {
 
     /**
