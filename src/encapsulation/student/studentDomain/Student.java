@@ -28,8 +28,8 @@ public class Student {
         return this.quizScores;
     }
 
-    public void setQuizScore(int quizIndex, int quizMark) {
-        this.quizScores[quizIndex] = quizMark;
+    public void setQuizScore(int quizNumberIndex, int quizMark) {
+        this.quizScores[quizNumberIndex] = quizMark;
     }
 
     public double getMidtermScore() {
