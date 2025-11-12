@@ -1,4 +1,4 @@
-package abstraction.shape;
+package abstraction.shape.subClass;
 
 abstract public class Shape {
 
