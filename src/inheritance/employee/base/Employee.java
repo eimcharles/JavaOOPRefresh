@@ -3,6 +3,14 @@ package inheritance.employee.base;
 import java.util.Objects;
 
 /**
+ *      Employee -> Manager
+ *               -> Programmer
+ *
+ *      Hierarchical inheritance,
+ *      multiple subclasses inherit from
+ *      the same superclass, forming a
+ *      hierarchical structure.
+
  *      Employee is a superclass,
  *      the parent class for both
  *      programmer and manager
