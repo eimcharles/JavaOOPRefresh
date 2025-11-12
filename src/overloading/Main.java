@@ -3,6 +3,13 @@ package overloading;
 public class Main {
 
 
+    /**
+     *      1. Compile-time (Static) Polymorphism:
+     *          - Achieved through method overloading.
+     *          - Multiple methods with the same name but different parameters.
+     *          - Method to execute is determined by the compiler.
+     * */
+
     public static void main(String[] args) {
 
         Rectangle rectangleOne;
@@ -18,7 +25,7 @@ public class Main {
     }
 
     public static int getArea(Rectangle rectangle) {
-        return getArea(rectangle.getLenght(), rectangle.getWidth());
+        return getArea(rectangle.getLength(), rectangle.getWidth());
     }
 
     public static int getArea(int length, int width) {

@@ -10,7 +10,7 @@ public class Rectangle {
         this.width = width;
     }
 
-    public int getLenght() {
+    public int getLength() {
         return lenght;
     }
 
