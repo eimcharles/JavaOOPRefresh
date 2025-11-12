@@ -18,7 +18,6 @@ import java.util.Objects;
  *      A birthdayCard may or may not have an associated LocalDate birthday.
  */
 
-
 public class BirthdayCard extends Card {
 
     private LocalDate birthday;
