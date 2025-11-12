@@ -5,6 +5,11 @@ public class Main {
     /**
      *      Polymorphism: many forms
      *
+     *      Runtime (Dynamic) Polymorphism:
+     *      - Achieved through method overriding.
+     *      - Subclass provides a specific implementation of a superclass method.
+     *      - Method to execute is determined at runtime based on the actual object.
+     *
      *      Car - move, break, getCurrentSpeed
      *      Bicycle - move, break, getCurrentSpeed
      *      Electric Scooter - move, break, getCurrentSpeed
