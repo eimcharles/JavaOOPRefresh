@@ -20,7 +20,7 @@ public class StudentService {
 
     public void updateAllQuizScores(Student student, int[] quizScores) {
 
-        // Makes sure that the passed array is the same size as the quiz array
+        // Makes sure that the new updated quiz array is the same size as the student quiz array
         if (quizScores == null || quizScores.length != student.getQuizScores().length) {
             System.out.println("Invalid quizzes, value must be in range 1-" + student.getQuizScores().length);
             return;
@@ -29,9 +29,10 @@ public class StudentService {
         for (int i = 0; i < quizScores.length; i++) {
             if (quizScores[i] < 0 || quizScores[i] > 20){
                 System.out.println("Invalid quiz score for quiz number " + (i + 1) + " with a values of " + quizScores[i]);
-                // reset the quiz score
+                // reset the quiz score to 0
                 student.setQuizScore(i, 0);
             } else {
+                // updates the student’s quiz score at index i with the new valid value from the array.
                 student.setQuizScore(i, quizScores[i]);
             }
         }
@@ -58,12 +59,13 @@ public class StudentService {
             return;
         }
 
-        if (quizScore <= 0 || quizScore > 20){
+        // If the quiz number is 0 or greater than the quiz mark range
+        if (quizScore < 0 || quizScore > 20){
             System.out.println("Invalid score value " + quizScore + " value must be in range (0-20)");
             return;
         }
 
-        // shifts quizNumber index by -1 and assigns the quizScore
+        // Converts the 1-based quizNumber to a 0-based array index with quizNumber - 1
         student.setQuizScore(quizNumber - 1, quizScore);
     }
 
@@ -80,6 +82,7 @@ public class StudentService {
             return;
         }
 
+        // update the midterm score
         student.setMidtermScore(midtermScore);
     }
 
@@ -91,11 +94,12 @@ public class StudentService {
      * */
 
     public void updateFinalScore(Student student, int finalScore) {
-        if (finalScore <= 0 || finalScore > 100) {
+        if (finalScore < 0 || finalScore > 100) {
             System.out.println("Error invalid value for final score, value must be in range (0-100)");
             return;
         }
 
+        // update the final score
         student.setFinalScore(finalScore);
     }
 
@@ -109,14 +113,14 @@ public class StudentService {
 
         int[] quizScores = student.getQuizScores();
 
-        if (quizScore <= 0 || quizScore > 20) {
+        if (quizScore < 0 || quizScore > 20) {
             System.out.println("Invalid quiz score " + quizScore + " doesn't exist");
             return -1;
         }
 
         for (int i = 0; i < quizScores.length; i++) {
             if (quizScores[i] == quizScore){
-                // Shifts quizNumber index by +1
+                // Return the quiz number (1-based array) corresponding to the matching score
                 return i+1;
             }
         }
@@ -138,7 +142,7 @@ public class StudentService {
             return -1;
         }
 
-        // Shifts quizNumber index by -1
+        // Convert the 1-based quiz number to a 0-based array index and return the corresponding quiz score
         return quizScores[quizNumber - 1];
     }
 
