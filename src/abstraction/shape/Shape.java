@@ -8,6 +8,16 @@ abstract public class Shape {
         this.color = colour;
     }
 
+    /**
+     *      protected abstract double area()
+     *
+     *      - Enforces encapsulation at the abstract class level.
+     *      - Only subclasses (or classes in the same package) can see or override it.
+     *      - The abstract class controls how outside code interacts with this internal method,
+     *
+     *        e.g., via public methods like printArea().
+     */
+
     protected abstract double area();
 
     public void printArea(){
