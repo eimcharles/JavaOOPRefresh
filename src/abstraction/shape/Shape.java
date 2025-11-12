@@ -25,6 +25,6 @@ abstract public class Shape {
     }
 
     public void displayColor() {
-        System.out.println("This shape a color of " + color + ".");
+        System.out.println("This shape has a color of " + color + ".");
     }
 }
