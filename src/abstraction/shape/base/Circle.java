@@ -1,4 +1,6 @@
-package abstraction.shape.subClass;
+package abstraction.shape.base;
+
+import abstraction.shape.subClass.Shape;
 
 public class Circle extends Shape {
 

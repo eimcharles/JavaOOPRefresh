@@ -1,6 +1,6 @@
 package abstraction.shape;
 
-import abstraction.shape.subClass.Circle;
+import abstraction.shape.base.Circle;
 import abstraction.shape.subClass.Shape;
 
 public class Main {
