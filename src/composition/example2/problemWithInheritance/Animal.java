@@ -5,8 +5,9 @@ public class Animal {
     /**
      *      limitation of inheritance:
      *
-     *      Subclasses get everything from the parent,
-     *      even what you don’t want.
+     *      Subclasses inherit everything from their parent
+     *      classes, even behaviours we sometimes
+     *      you don’t want.
      *
      *      Solution:
      *

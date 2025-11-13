@@ -4,7 +4,7 @@ public class RobotDog extends Animal {
 
     /**
      *
-     *      RobotDog Inherits both bark() and eat()
+     *      The RobotDog Class Inherits both bark() and eat()
      *      calling eat() doesn’t make sense for a robot dog.
      *
      *      This causes errors or meaningless behavior.

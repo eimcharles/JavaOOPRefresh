@@ -4,7 +4,7 @@ public class Dog extends Animal {
 
     /**
      *
-     *      Animal Inherits both bark() and eat()
+     *      The Dog Class Inherits both bark() and eat()
      *      calling eat() which makes sense in the
      *      context of a Dog object
      *
