@@ -15,22 +15,6 @@ abstract public class HumanRace {
         this.place = place;
     }
 
-    /**
-     *          The purpose of an abstract class is
-     *          to function as a base for subclass.
-     *
-     *          HumanRace contains common functionality to
-     *          calculateTotalIQ and getHumanRaceInformation.
-     *
-     *          Encapsulates some common functionality in one place
-     *          and lets subclasses implement differences:
-     *
-     *          - computeIq()
-     *          - information()
-     *
-     *          Avoids code duplication and increases reusability.
-     * */
-
     protected abstract int computeIq();
     protected abstract String information();
 
