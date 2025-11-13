@@ -7,7 +7,7 @@ public class StudentService {
     public StudentService() {}
 
     /**
-     * 		updateAllQuizScores takes Student object
+     * 		updateAllQuizScores() takes Student object
      * 		and an array of quizScores.
      *
      * 	    Checks if the quizScores array is initialized and is
@@ -39,7 +39,7 @@ public class StudentService {
     }
 
     /**
-     * 		updateQuizScore takes a Student object, a
+     * 		updateQuizScore() takes a Student object, a
      * 	    quizNumber, and a quizScore.
      *
      * 		if the quizNumber or quizScore is out of bounds,
@@ -70,7 +70,7 @@ public class StudentService {
     }
 
     /**
-     *	      updateMidtermScore take a Student object and midtermScore,
+     *	      updateMidtermScore() takes a Student object and midtermScore,
      *	      and checks to see if the value is between 0 and 50.
      *
      *	      if the value is valid, updates a student's midterm score.
@@ -87,7 +87,7 @@ public class StudentService {
     }
 
     /**
-     *	    updateFinalScore takes a Student object and a finalScore,
+     *	    updateFinalScore() takes a Student object and a finalScore,
      *	    and checks to see if the value is between 0 and 100.
      *
      *	    if the value is valid, updates a student's final score
@@ -104,7 +104,7 @@ public class StudentService {
     }
 
     /**
-     *	    findQuizNumberByStudent takes Student object and quizScore,
+     *	    findQuizNumberByStudent() takes Student object and quizScore,
      *	    checks to see if the quizScore negative or outside the
      *	    length of quizScores array, returns the associated quizNumber.
      * */
@@ -129,7 +129,7 @@ public class StudentService {
     }
 
     /**
-     *	    findQuizScoreByStudent takes Student object and a quizNumber,
+     *	    findQuizScoreByStudent() takes Student object and a quizNumber,
      *	    returns the associated quizScore
      * */
 

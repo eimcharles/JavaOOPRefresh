@@ -7,7 +7,7 @@ public class GradeCalculator {
     public GradeCalculator() {}
 
     /**
-     * 		calculates the overall grade
+     * 		setOverallStudentScore() calculates the overall grade
      * 		for a given Student Object
      * */
 
@@ -31,7 +31,7 @@ public class GradeCalculator {
     }
 
     /**
-     *      calculates the letter grade
+     *      updateLetterGrade() calculates the letter grade
      *      given a Student object
      */
 

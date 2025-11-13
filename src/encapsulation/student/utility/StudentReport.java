@@ -7,7 +7,7 @@ public class StudentReport {
     public StudentReport() {}
 
     /**
-     *      Formats a report for the given Student object.
+     *      formatReport() formats a report for the given Student object.
      *
      *      The report includes:
      *           - Student's name
