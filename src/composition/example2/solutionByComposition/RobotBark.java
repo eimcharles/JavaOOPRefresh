@@ -3,10 +3,14 @@ package composition.example2.solutionByComposition;
 public class RobotBark implements BarkBehavior {
 
     /**
-     *      DogBark and RobotBark are
-     *      concrete implementations of
+     *
+     *      The RobotBark class is a composed object,
+     *      that Dog delegates its bark() behaviour to.
+     *
+     *      The RobotBark implements
      *      the BarkBehavior interface
      *      contract.
+     *
      * */
 
     @Override

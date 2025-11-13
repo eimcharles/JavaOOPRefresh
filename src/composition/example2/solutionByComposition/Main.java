@@ -4,9 +4,10 @@ public class Main {
 
     /**
      *      A single reference type (BarkBehavior)
-     *      can refer to multiple concrete implementations.
+     *      can refer to multiple concrete implementations
+     *      DogBark and RobotBark.
      *
-     *      At runtime, Java dynamically calls the actual implementation:
+     *      At runtime, Java dynamically calls the implementations:
      *
      *       - If barkBehavior points to DogBark, it calls DogBark.bark().
      *       - If barkBehavior points to RobotBark, it calls RobotBark.bark()
@@ -15,11 +16,6 @@ public class Main {
      *
      *       Dog delegates DogBark -> barkBehavior -> polymorphism -> DogBark.bark()
      *       RobotDog delegates RobotBark -> barkBehavior -> polymorphism -> RobotBark.bark()
-     *
-     *       Method call is resolved at runtime → this is runtime polymorphism (dynamic dispatch)
-     *
-     *       barkBehavior is a reference of type BarkBehavior (interface).
-     *       The actual object is a DogBark.
      *
      * */
 
