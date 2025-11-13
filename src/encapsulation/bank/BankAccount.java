@@ -5,7 +5,7 @@ package encapsulation.bank;
  *       state and behaviour together as a unit.
  *
  *       - It prevents classes from being tightly coupled
- *       - We can make class attributes hidden from other classes using encapsulation
+ *       - Class attributes are hidden from other classes using encapsulation
  *       - Easy to modify inner workings of classes without affecting rest of program
  * */
 
