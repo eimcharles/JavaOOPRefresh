@@ -3,7 +3,7 @@ package composition.example1;
 /**
  *      Represents a House object that contains an Animal object.
  *
- *      This class demonstrates composition: a House "has-an" Animal.
+ *      This class demonstrates composition: a House "has a" Animal.
  *      The Animal is a part of the House.
  *
  *      The House does not control the creation or destruction of the Animal,
@@ -16,7 +16,6 @@ public class House {
 
     private final String address;
     private Animal animal;
-
 
     public House(String address) {
         this.address = address;
