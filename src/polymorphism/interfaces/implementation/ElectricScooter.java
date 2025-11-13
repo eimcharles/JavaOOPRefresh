@@ -6,6 +6,13 @@ import java.io.Serializable;
 
 public class ElectricScooter implements Vehicle, Serializable {
 
+    /**
+     *      the concrete implementation of the Vehicle interface.
+     *
+     *
+     *
+     * */
+
     private int currentSpeed;
 
     public ElectricScooter() {}

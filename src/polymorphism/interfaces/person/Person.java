@@ -9,7 +9,7 @@ public class Person {
 
     /**
      *      Allows for a Person object
-     *      tp have one Vehicle or
+     *      to have one Vehicle or
      *      multiple Vehicles
      * */
 
