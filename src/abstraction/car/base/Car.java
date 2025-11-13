@@ -1,19 +1,5 @@
 package abstraction.car.base;
 
-/**
- *       Abstract classes should be used when you want to define a common
- *       base for related classes but do not want to allow direct instantiation.
- *
- *      They allow you to:
- *      - Provide shared fields and concrete methods for all subclasses.
- *      - Declare abstract methods that must be implemented by subclasses.
- *      - Enforce a common interface while allowing subclasses to supply
- *        specific behavior.
- *
- *      Purpose: to promote code reuse, consistency, and polymorphism
- *      across a group of related classes.
- */
-
 abstract public class Car {
 
     protected int numberOfDoors;
@@ -31,18 +17,19 @@ abstract public class Car {
     }
 
     /**
-     *      Method is declared without
-     *      implementation
+     *      Abstract class methods are declared without
+     *      implementation.
      *
-     *      - It cannot be private / final
-     *        because it needs to be overridden
-     *        in the concrete class - Subclass
+     *      - They cannot be private / final
+     *        because they need to be overridden
+     *        in concrete classes - Subclasses
      *
      *      Any Class that extends Car must
-     *      provide an implementation for this method
+     *      provide an implementation for abstract
+     *      methods.
      *
      *      This enforces shared behaviour that
-     *      the subclass must implement.
+     *      the subclasses must implement.
      *
      *      The specific behaviour is then invoked
      *      by the use of polymorphism.
@@ -62,11 +49,12 @@ abstract public class Car {
     }
 
     /**
-     *      General utility methods for arrays of Car objects.
+     *      The car Class contains common behaviors:
+     *      ListOfManufacturedCars() and getPriceOfManufacturedCars()
      *
      *      These methods work for any subclass of Car, relying on
      *      overridden methods like toString() and getPrice() to provide
-     *      subclass-specific behavior while keeping the code general.
+     *      subclass-specific behavior.
      */
 
     public static void ListOfManufacturedCars(Car[] car){
@@ -83,7 +71,7 @@ abstract public class Car {
 
     /**
      *      Default method for all subclasses to inherit,
-     *      unless they override it,
+     *      unless overridden.
      * */
 
     @Override
