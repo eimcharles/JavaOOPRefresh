@@ -2,14 +2,6 @@ package overloading.basic;
 
 public class Main {
 
-
-    /**
-     *      1. Compile-time (Static) Polymorphism:
-     *          - Achieved through method overloading.
-     *          - Multiple methods with the same name but different parameters.
-     *          - Method to execute is determined by the compiler.
-     * */
-
     public static void main(String[] args) {
 
         Rectangle rectangleOne;
