@@ -9,14 +9,14 @@ import java.util.regex.Pattern;
 abstract public class ExtractedReport {
 
     /**
-     *          The purpose of an abstract class is
-     *          to function as a base for subclass.
+     *          The purpose of an abstract class (base class )
+     *          is to provide some default/common functionality to subclasses.
+
+     *          The Extracted report class contains common behaviors:
+     *          parseReport() and prepareAndSend().
      *
-     *          Extracted report contains common functionality to
-     *          parseReport and prepareAndSend a report.
-     *
-     *          Encapsulates some common functionality in one place
-     *          and lets subclasses implement differences:
+     *          It Encapsulates common functionality in one place
+     *          and lets subclasses implement their differences:
      *
      *          - getPattern()
      *          - getReportName()

@@ -7,12 +7,15 @@ import java.util.regex.Pattern;
 public class EmailsExtractedReport extends ExtractedReport {
 
     /**
-     *      EmailsExtractedReport implements the specific
-     *      functionality based on the given pattern
+     *      The EmailsExtractedReport class implements
+     *      specific differences in behaviors:
      *
-     *      In this case an email pattern and ensures
-     *      the values returned that match the pattern
-     *      are lowerCase.
+     *      - getPattern()
+     *      - getReportName()
+     *      - clean()
+     *
+     *      Pattern is a regular expression
+     *      to validate standard email addresses.
      * */
 
     // Compiles it once, and every instance of the class can reuse the same compiled pattern (one pattern in memory)

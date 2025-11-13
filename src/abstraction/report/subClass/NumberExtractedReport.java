@@ -7,10 +7,16 @@ import java.util.regex.Pattern;
 public class NumberExtractedReport extends ExtractedReport {
 
     /**
-     *      NumberExtractedReport implements the specific
-     *      functionality based on the given pattern
+     *      The NumberExtractedReport class implements
+     *      specific differences in behaviors:
      *
-     *      In this case a number pattern
+     *      - getPattern()
+     *      - getReportName()
+     *      - clean()
+     *
+     *      Pattern is a regular expression pattern
+     *      to validate that the input only contains digits.
+     *
      * */
 
     // Compiles it once, and every instance of the class can reuse the same compiled pattern (one pattern in memory)
