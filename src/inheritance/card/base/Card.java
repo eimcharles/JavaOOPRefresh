@@ -2,14 +2,14 @@ package inheritance.card.base;
 
 import java.util.Objects;
 
-/**
- *      Card -> BirthdayCard
- *
- *      A subclass extends only one superclass.
- *      This is the standard type of inheritance supported in Java.
- * */
-
 public class Card {
+
+    /**
+     *      Card -> BirthdayCard
+     *
+     *      A subclass extends only one superclass.
+     *      This is the standard type of inheritance supported in Java.
+     * */
 
     protected Occasion occasion;
     protected String message;

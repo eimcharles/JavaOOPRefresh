@@ -8,17 +8,9 @@ import java.util.Objects;
  *
  *      Hierarchical inheritance,
  *      multiple subclasses inherit from
- *      the same superclass, forming a
+ *      the Employee superclass, forming a
  *      hierarchical structure.
-
- *      Employee is a superclass,
- *      the parent class for both
- *      programmer and manager
- *      child classes.
  *
- *      The protected access modifiers
- *      allow for subclasses to have direct
- *      access to their inherited attributes.
  * */
 
 public class Employee {

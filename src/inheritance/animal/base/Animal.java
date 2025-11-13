@@ -1,16 +1,16 @@
 package inheritance.animal.base;
 
-/**
- *      Multilevel inheritance
- *
- *      Animal -> Dog -> GoldenRetriever
- *
- *      A subclass that inherits from another subclass,
- *      creating a chain of inheritance,
- *      is called multilevel inheritance.
- * */
-
 public class Animal {
+
+    /**
+     *      Multilevel inheritance
+     *
+     *      Animal -> Dog -> GoldenRetriever
+     *
+     *      A subclass that inherits from another subclass,
+     *      creating a chain of inheritance,
+     *      is called multilevel inheritance.
+     * */
 
     protected AnimalType type;
 
