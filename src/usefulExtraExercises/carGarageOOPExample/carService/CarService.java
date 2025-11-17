@@ -1,4 +1,6 @@
-package usefulExtraExercises.carGarageOOPExample;
+package usefulExtraExercises.carGarageOOPExample.carService;
+
+import usefulExtraExercises.carGarageOOPExample.car.Car;
 
 public class CarService {
 

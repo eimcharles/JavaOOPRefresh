@@ -1,42 +1,43 @@
-package usefulExtraExercises.carGarageOOPExample;
+package usefulExtraExercises.carGarageOOPExample.car;
 
+import java.time.Year;
 import java.util.Objects;
 
 public class Car {
 
-    private String brand;
-    private String model;
-    private int modelYear;
+    private Brand brand;
+    private Model model;
+    private Year modelYear;
     private String licensePlateNumber;
 
-    public Car(String brand, String model, int modelYear, String licensePlateNumber) {
+    public Car(Brand brand, Model model, Year modelYear, String licensePlateNumber) {
         this.brand = brand;
         this.model = model;
         this.modelYear = modelYear;
         this.licensePlateNumber = licensePlateNumber;
     }
 
-    public String getBrand() {
+    public Brand getBrand() {
         return brand;
     }
 
-    public void setBrand(String brand) {
+    public void setBrand(Brand brand) {
         this.brand = brand;
     }
 
-    public String getModel() {
+    public Model getModel() {
         return model;
     }
 
-    public void setModel(String model) {
+    public void setModel(Model model) {
         this.model = model;
     }
 
-    public int getModelYear() {
+    public Year getModelYear() {
         return modelYear;
     }
 
-    public void setModelYear(int modelYear) {
+    public void setModelYear(Year modelYear) {
         this.modelYear = modelYear;
     }
 
@@ -64,6 +65,6 @@ public class Car {
 
     @Override
     public String toString() {
-        return "Car { brand = '%s', model = '%s', modelYear = %d, licensePlateNumber = '%s'}".formatted(brand, model, modelYear, licensePlateNumber);
+        return "Car { brand = '%s', model = '%s', modelYear = %d, licensePlateNumber = '%s'}".formatted(brand, model, modelYear.getValue(), licensePlateNumber);
     }
 }
