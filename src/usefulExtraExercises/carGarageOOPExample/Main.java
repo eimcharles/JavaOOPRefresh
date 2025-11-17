@@ -1,13 +1,22 @@
 package usefulExtraExercises.carGarageOOPExample;
 
+import usefulExtraExercises.carGarageOOPExample.car.Brand;
+import usefulExtraExercises.carGarageOOPExample.car.Car;
+import usefulExtraExercises.carGarageOOPExample.car.Model;
+import usefulExtraExercises.carGarageOOPExample.carService.CarService;
+import usefulExtraExercises.carGarageOOPExample.garage.Garage;
+import usefulExtraExercises.carGarageOOPExample.garageService.GarageService;
+
+import java.time.Year;
+
 public class Main {
 
     public static void main(String[] args) {
 
         // Create a new car to be added to the garage
-        Car mazda = new Car("Mazda", "CX5", 1998, "YZ3 K1J");
-        Car bmw = new Car("BMW", "M3", 2021, "YZ3 Z34");
-        Car volks = new Car("Volkswagen", "Tiguan", 2024, "K1J Y6N");
+        Car mazda = new Car(Brand.MAZDA, Model.CX5, Year.of(1998), "YZ3 K1J");
+        Car bmw = new Car(Brand.BMW, Model.M3, Year.of(2021), "YZ3 Z34");
+        Car volks = new Car(Brand.VOLKSWAGEN, Model.TIGUAN, Year.of(2024), "K1J Y6N");
 
         // Create a garage with no cars in it
         Garage garage = new Garage(5);
