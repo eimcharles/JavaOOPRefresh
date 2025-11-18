@@ -1,6 +1,6 @@
 package polymorphism.interfaces.implementationExample1;
 
-import polymorphism.interfaces.vehicleInterface.Vehicle;
+import polymorphism.interfaces.implementationExample1.vehicleInterface.Vehicle;
 
 import java.io.Serializable;
 

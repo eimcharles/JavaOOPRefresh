@@ -1,10 +1,7 @@
-package polymorphism.interfaces;
+package polymorphism.interfaces.implementationExample1;
 
-import polymorphism.interfaces.implementationExample1.Bicycle;
-import polymorphism.interfaces.implementationExample1.Car;
-import polymorphism.interfaces.implementationExample1.ElectricScooter;
-import polymorphism.interfaces.person.Person;
-import polymorphism.interfaces.vehicleInterface.Vehicle;
+import polymorphism.interfaces.implementationExample1.person.Person;
+import polymorphism.interfaces.implementationExample1.vehicleInterface.Vehicle;
 
 public class Main {
 
