@@ -1,8 +1,8 @@
 package polymorphism.interfaces;
 
-import polymorphism.interfaces.implementation.Bicycle;
-import polymorphism.interfaces.implementation.Car;
-import polymorphism.interfaces.implementation.ElectricScooter;
+import polymorphism.interfaces.implementationExample1.Bicycle;
+import polymorphism.interfaces.implementationExample1.Car;
+import polymorphism.interfaces.implementationExample1.ElectricScooter;
 import polymorphism.interfaces.person.Person;
 import polymorphism.interfaces.VehicleInterface.Vehicle;
 

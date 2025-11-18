@@ -1,36 +1,27 @@
-package polymorphism.interfaces.implementation;
+package polymorphism.interfaces.implementationExample1;
 
 import polymorphism.interfaces.VehicleInterface.Vehicle;
 
 import java.io.Serializable;
 
-public class ElectricScooter implements Vehicle, Serializable {
-
-    /**
-     *      the concrete implementation of the Vehicle interface.
-     *
-     *
-     *
-     * */
+public class Car implements Vehicle, Serializable {
 
     private int currentSpeed;
 
-    public ElectricScooter() {}
+    public Car(){}
 
-    public ElectricScooter(int currentSpeed) {
+    public Car(int currentSpeed) {
         this.currentSpeed = currentSpeed;
     }
 
     @Override
     public void move(int amount) {
         this.currentSpeed += amount;
-
     }
 
     @Override
     public void applyBreaks(int amount) {
         this.currentSpeed -= amount;
-
     }
 
     @Override
@@ -40,6 +31,6 @@ public class ElectricScooter implements Vehicle, Serializable {
 
     @Override
     public String toString() {
-        return "ElectricScooter { currentSpeed = %d}".formatted(currentSpeed);
+        return "Car { currentSpeed = %d }".formatted(currentSpeed);
     }
 }
