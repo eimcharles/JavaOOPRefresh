@@ -4,7 +4,7 @@ import polymorphism.interfaces.implementationExample1.Bicycle;
 import polymorphism.interfaces.implementationExample1.Car;
 import polymorphism.interfaces.implementationExample1.ElectricScooter;
 import polymorphism.interfaces.person.Person;
-import polymorphism.interfaces.VehicleInterface.Vehicle;
+import polymorphism.interfaces.vehicleInterface.Vehicle;
 
 public class Main {
 

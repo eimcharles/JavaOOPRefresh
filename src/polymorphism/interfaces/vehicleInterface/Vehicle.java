@@ -1,4 +1,4 @@
-package polymorphism.interfaces.VehicleInterface;
+package polymorphism.interfaces.vehicleInterface;
 
 public interface Vehicle {
 
